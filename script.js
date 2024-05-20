@@ -21,6 +21,19 @@ function calculate(){
     }
   
 }
+
+window.addEventListener('keydown', (event) => {
+    const key = event.key;
+    if (key === 'Enter') {
+        calculate();
+    
+    }  else if (key === 'Escape') {
+        clear();
+    }  
+       
+    
+});
+
 function deleteText() {
     output.value = output.value.slice(0, -1);
 }
