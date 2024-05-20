@@ -29,7 +29,12 @@ window.addEventListener('keydown', (event) => {
     
     }  else if (key === 'Escape') {
         clear();
-    }  
+    }  else if (!isNaN(key) || ['+', '-', '*', '/', '.'].includes(key)) {
+        display(key);
+    } else if (key === 'Backspace') {
+        deleteText();
+    }
+
        
     
 });

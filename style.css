@@ -50,6 +50,7 @@ input {
     border-radius: 30px;
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
     cursor: pointer; 
+    transition: background-color 0.3s ease;
 }
 
 .buttons{
@@ -64,7 +65,7 @@ input {
     border: none; 
     font-size: 16px;
     cursor: pointer;  
-    transition: background-color 0.3s ease;
+    transition: background-color 1s ease;
     font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
     color: #2a1f62;
     background: #f5f5fa;
@@ -72,11 +73,14 @@ input {
     transition: .2s;
   
 }
+button:hover{
+    background-color: #fff;
+}
 
 .sp-colur{
     background-color: orange !important;
+   
 }
-
 
 
 
